@@ -1,9 +1,7 @@
 ---
 layout: default
 nav_order: 2
-title: Participating online
-has_children: false
-has_toc: false
+title: Land acknowledgement 
 ---
 # Land acknowledgement
 
