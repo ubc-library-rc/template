@@ -7,7 +7,7 @@ nav_order: 20
 <ul>
 <li>[Book a consult with a graduate student](https://libcal.library.ubc.ca/appointments/research_commons). *If you do not know which analysis to run, [consult the UBC Statistics Department](https://www.stat.ubc.ca/how-can-you-get-help-your-data) first.</li> 
 <li>See [upcomming workshops](https://researchcommons.library.ubc.ca/workshops/)</li>
-<li>[UBC Research Commons](https://researchcommons.library.ubc.ca/) home page. Here you will fins information about all the other services the UBC Research Commons provides.</li>
+<li>[UBC Research Commons](https://researchcommons.library.ubc.ca/) home page. Here you will find information about all the other services the UBC Research Commons provides.</li>
 </ul>
 
 
