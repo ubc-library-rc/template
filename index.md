@@ -24,5 +24,3 @@ At the end of this workshop, you will be able to:
 | 0:45 |  |
 | 1:00 | Wrap-up and Discussion |
 
-## Resources
-* [eg. link to external slides]
