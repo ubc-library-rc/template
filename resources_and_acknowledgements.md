@@ -5,9 +5,9 @@ nav_order: 20
 ---
 ## Resources
 
-- [Book a consultation](https://researchcommons.library.ubc.ca/consultation-requests/){:target="_blank"}
-- [View upcoming workshops](https://researchcommons.library.ubc.ca/workshops/){:target="_blank"}
-- [UBC Research Commons home page](https://researchcommons.library.ubc.ca/){:target="_blank"}
+- [Book a consultation](https://researchcommons.library.ubc.ca/consultation-requests/)
+- [View upcoming workshops](https://researchcommons.library.ubc.ca/workshops/)
+- [UBC Research Commons home page](https://researchcommons.library.ubc.ca/)
 
 
 ## Acknowledgements
