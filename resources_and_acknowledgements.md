@@ -7,6 +7,8 @@ nav_order: 20
 
 - [Book a consultation](https://researchcommons.library.ubc.ca/consultation-requests/)
 - [View upcoming workshops](https://researchcommons.library.ubc.ca/workshops/)
+- [Guides for all sorts of research and analysis](https://guides.library.ubc.ca/menu)
+- [All Workshops (GitHub)](https://github.com/orgs/ubc-library-rc/repositories)
 - [UBC Research Commons home page](https://researchcommons.library.ubc.ca/)
 
 
