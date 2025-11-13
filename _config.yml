@@ -1,13 +1,33 @@
-title: Title of workshop
-remote_theme: ubc-library-rc/rc-theme
+#Your workshop title, as it appears on the page
+#Don't make it too long because it gets truncated
+#Quotes optional but sometimes required,
+#especially if there's a colon in the title.
+title: "Workshop title" 
+
+#Various themes
+#remote_theme: ubc-library-rc/rc-theme
+remote_theme: ubc-library-rc/rc-theme@dev #specific branch
+#remote_theme: ubc-library-rc/rc-theme@5dbd930 #specific commit
+##Or Read the Docs
+#remote_theme: carlosperate/jekyll-theme-rtd
+
+#RC colour scheme
 color_scheme: rc
-github_repo_url: "https://github.com/ubc-library-rc/REPOSITORY-NAME/" 
+
+#Edit this line to point to the correct location for your workshop
+github_repo_url: "https://github.com/ubc-library-rc/template/"
+
+#The directory which contains all the material.
+#ie, the site root directory
+#The reveal.js submodule must be here
+source: content
 
 # license information for workshop content
 license_name: "Creative Commons Attribution 4.0 International License"
 license_url: "http://creativecommons.org/licenses/by/4.0/"
 license_image_url: "https://i.creativecommons.org/l/by/4.0/88x31.png"
 
+#Required plugins for the Jekyll remote theme
 plugins:
   - jekyll-remote-theme
   - jekyll-seo-tag

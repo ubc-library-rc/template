@@ -1,10 +1,14 @@
 # Name of workshop
 ### UBC Library Research Commons
+### Other authors etc.
 
-:heavy_exclamation_mark: This workshop is in development and not yet complete. :heavy_exclamation_mark:    
+Description: Add a short workshop description here (on one line starting with "Description:"). If the workshop is featured, this description will appear on the featured workshops web page.
 
-Description: Add a short workshop description here (on one line starting with "Description:"). If the workshop is featured, this description will appear on the featured workshops web page.   
+Basic README information goes here. Generally this just describes what the workshop *is* and provides a link to the Github pages version of the workshop as below.
 
-Link to workshop: https://ubc-library-rc.github.io/your_workshop_repository_name/
+Link to workshop: <https://ubc-library-rc.github.io/your_workshop_repository_name/>
 
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+
+[![CC-BY licence](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/){:target="_blank"}
+
+This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/){:target="_blank"}

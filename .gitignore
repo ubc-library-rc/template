@@ -1,0 +1,9 @@
+_site
+**/_site
+.DS_Store
+**/.DS_Store
+Gemfile*
+.jekyll-cache/
+**/.jekyll-cache
+tmp/
+

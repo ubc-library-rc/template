@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!---
+An HTML framework for a presentation. Does not use Markdown.
+* Change the <title> tag to the title of your presentation
+* Put your images in the `images` directory
+* Custom CSS is in `custom`
+* All the other HTML is the same as HTML reveal.js, like transitions, etc.
+-->
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+  <title>
+   Presentation title
+  </title>
+  <link href="/reveal.js/dist/reset.css" rel="stylesheet"/>
+  <link href="/reveal.js/dist/reveal.css" rel="stylesheet"/>
+  <link href="custom/ubc-no-logo-dark.css" rel="stylesheet"/>
+  <!--<link rel="stylesheet" href="custom/ubc-modified.css">-->
+  <!-- Theme used for syntax highlighted code -->
+  <link href="/reveal.js/plugin/highlight/monokai.css" id="highlight-theme" rel="stylesheet"/>
+  <style>
+   .yellow {
+				color: #FF8C00 /* previously #FFA500; */
+			}
+
+			.smaller {
+				font-size: smaller;
+			}
+			.larger {
+				font-size: larger;
+			}
+  </style>
+ </head>
+ <body>
+  <div class="reveal">
+   <div class="slides">
+    <section data-background-image="images/RC_UBC_background_dark.svg" data-background-position="left 100%" data-charset="utf-8">
+     <p>
+      Some text goes here
+     </p>
+     <aside class="notes">
+      These are the notes for section 1.
+     </aside>
+    </section>
+    <section data-background-image="images/RC_UBC_background_dark.svg" data-background-position="left 100%" data-charset="utf-8">
+     <h1>
+      test
+     </h1>
+     <p>
+      And furthermore
+     </p>
+     <aside class="notes">
+      These are the notes for section 2.
+     </aside>
+    </section>
+    <!-- You probably have the idea by now-->
+    <section data-background-image="images/RC_UBC_background_dark.svg" data-background-position="left 100%" data-charset="utf-8">
+     <h3>
+      UBC Library
+      <br/>
+      Research Commons
+     </h3>
+     <blockquote>
+      A multidisciplinary hub supporting research endeavours, partnerships, and education.
+     </blockquote>
+    </section>
+    <section data-background-image="images/RC_UBC_background_dark.svg" data-background-position="left 100%" data-charset="utf-8">
+     <p>
+      More from the Research Commons at (UBC-V)
+     </p>
+     <ul>
+      <li>
+       <a href="https://researchcommons.library.ubc.ca/">
+        researchcommons.library.ubc.ca
+       </a>
+      </li>
+      <li>
+       <a href="https://researchcommons.library.ubc.ca/events/">
+        Upcoming events
+       </a>
+      </li>
+      <li>
+       <a href="https://researchcommons.library.ubc.ca/oer/">
+        Open Educational Resources (OERs)
+       </a>
+      </li>
+     </ul>
+    </section>
+   </div>
+  </div>
+  <script src="/reveal.js/dist/reveal.js">
+  </script>
+  <script src="/reveal.js/plugin/notes/notes.js">
+  </script>
+  <script src="/reveal.js/plugin/markdown/markdown.js">
+  </script>
+  <script src="/reveal.js/plugin/highlight/highlight.js">
+  </script>
+  <script>
+   // More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				center: false,
+				//transition: 'zoom',
+				//parallaxBackgroundImage: './images/RC_UBC_Background.png',
+				//parallaxBackgroundSize: '1920px 1080px',
+				//parallaxBackgroundHorizontal: 400,
+				//parallaxBackgroundVertical: 50,
+							
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+			//printing pdf
+			//Reveal.configure({ showNotes: true });
+			//Reveal.configure({ pdfSeparateFragments: false });
+			//Reveal.configure({ pdfMaxPagesPerSlide: 1 });
+			//Reveal.configure({ showNotes: 'separate-page' });
+  </script>
+  <script>
+   var link = document.createElement( 'link' );
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match( /print-pdf/gi ) ? '/reveal.js/css/print/pdf.scss' : '/reveal.js/css/print/paper.scss';
+		document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+ </body>
+</html>
