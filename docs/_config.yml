@@ -11,6 +11,10 @@ remote_theme: ubc-library-rc/rc-theme@dev #specific branch
 ##Or Read the Docs
 #remote_theme: carlosperate/jekyll-theme-rtd
 
+#This favicon is in the theme, not here, so don't be alarmed
+#when you don't see it. 
+favicon_ico: assets/images/favicon.svg
+
 #RC colour scheme
 color_scheme: rc
 
@@ -20,7 +24,7 @@ github_repo_url: "https://github.com/ubc-library-rc/template/"
 #The directory which contains all the material.
 #ie, the site root directory
 #The reveal.js submodule must be here
-source: content
+#source: content
 
 # license information for workshop content
 license_name: "Creative Commons Attribution 4.0 International License"
@@ -32,3 +36,11 @@ plugins:
   - jekyll-remote-theme
   - jekyll-seo-tag
   - jekyll-include-cache
+
+# Don't include README or the markdown in reveal.js
+exclude:
+  - README.md
+  - reveal.js/test/simple.md
+  - reveal.js/css/theme/README.md
+  - reveal.js/examples/markdown.md
+  - reveal.js/README.md

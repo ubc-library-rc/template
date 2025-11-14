@@ -13,12 +13,12 @@ An HTML framework for a presentation. Does not use Markdown.
   <title>
    Presentation title
   </title>
-  <link href="/reveal.js/dist/reset.css" rel="stylesheet"/>
-  <link href="/reveal.js/dist/reveal.css" rel="stylesheet"/>
+  <link href="../reveal.js/dist/reset.css" rel="stylesheet"/>
+  <link href="../reveal.js/dist/reveal.css" rel="stylesheet"/>
   <link href="custom/ubc-no-logo-dark.css" rel="stylesheet"/>
   <!--<link rel="stylesheet" href="custom/ubc-modified.css">-->
   <!-- Theme used for syntax highlighted code -->
-  <link href="/reveal.js/plugin/highlight/monokai.css" id="highlight-theme" rel="stylesheet"/>
+  <link href="../reveal.js/plugin/highlight/monokai.css" id="highlight-theme" rel="stylesheet"/>
   <style>
    .yellow {
 				color: #FF8C00 /* previously #FFA500; */
@@ -45,7 +45,7 @@ An HTML framework for a presentation. Does not use Markdown.
     </section>
     <section data-background-image="images/RC_UBC_background_dark.svg" data-background-position="left 100%" data-charset="utf-8">
      <h1>
-      test
+     Headline! 
      </h1>
      <p>
       And furthermore
@@ -89,13 +89,13 @@ An HTML framework for a presentation. Does not use Markdown.
     </section>
    </div>
   </div>
-  <script src="/reveal.js/dist/reveal.js">
+  <script src="../reveal.js/dist/reveal.js">
   </script>
-  <script src="/reveal.js/plugin/notes/notes.js">
+  <script src="../reveal.js/plugin/notes/notes.js">
   </script>
-  <script src="/reveal.js/plugin/markdown/markdown.js">
+  <script src="../reveal.js/plugin/markdown/markdown.js">
   </script>
-  <script src="/reveal.js/plugin/highlight/highlight.js">
+  <script src="../reveal.js/plugin/highlight/highlight.js">
   </script>
   <script>
    // More info about initialization & config:
@@ -124,7 +124,7 @@ An HTML framework for a presentation. Does not use Markdown.
    var link = document.createElement( 'link' );
 		link.rel = 'stylesheet';
 		link.type = 'text/css';
-		link.href = window.location.search.match( /print-pdf/gi ) ? '/reveal.js/css/print/pdf.scss' : '/reveal.js/css/print/paper.scss';
+		link.href = window.location.search.match( /print-pdf/gi ) ? '../reveal.js/css/print/pdf.scss' : '../reveal.js/css/print/paper.scss';
 		document.getElementsByTagName( 'head' )[0].appendChild( link );
   </script>
  </body>
