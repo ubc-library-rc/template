@@ -23,7 +23,7 @@ Workshop sites can include slides in [reveal.js](https://revealjs.com/) format. 
 <div style="overflow: hidden;
   padding-top: 56.25%;
   position: relative">
-<iframe src="../demo-slide-deck.html" title="demo embedded slide deck" scrolling="no" frameborder="0"
+<iframe src="slide_framework/presentation_framework_md.html" title="Demo embedded slide deck" scrolling="no" frameborder="0"
     style="border: 0;
    height: 100%;
    left: 0;
