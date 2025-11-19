@@ -6,4 +6,4 @@ Gemfile*
 .jekyll-cache/
 **/.jekyll-cache
 tmp/
-
+**/test.md
