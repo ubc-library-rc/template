@@ -4,10 +4,13 @@ title: Topics and workshop lists
 nav_order: 2 
 ---
 # Topics and workshop lists 
-The Research Commons uses GitHub *topics* to organize our repositories. We apply topics in a systematic way to:
+The Research Commons uses GitHub *topics* in a systematic way to group repositories by team and generate online lists of workshops. To assign one or more topics to your GitHub repository: 
 
-- group repositories by team  
-- generate online lists of workshops 
+1. go to the repository in GitHub
+2. click the gear icon to the right of the list of files
+3. enter topic(s) in the _Topics_ field
+4. click _Save changes_
+
 
 ## Topics for teams
 Each workshop repository should have at least one topic from the table below. Collaborative workshops may have more than on team topic.
@@ -27,13 +30,10 @@ Team topics control how workshops are grouped in online lists
 ## Topics for online lists
 Topics control how worskhops appear on two public-facing lists:
 
-- <https://ubc-library-rc.github.io/all.html> - all workshops
-- <https://ubc-library-rc.github.io/index.html> - featured workshops
+- <https://ubc-library-rc.github.io/all.html> for all workshops. To appear on this list a repository must have at least one team topic, in addition to the topic `workshop`.
+- <https://ubc-library-rc.github.io/index.html> for featured workshops. To appear on this page the repository must _also_ have the `featured` topic. 
 
-To appear on the "all workshops" list, a repository must have at least one team topic in addition to the topic `workshop`.
-
-To appear on the "featured workshops" page the repository must also have the `featured` topic.
-
+The lists are re-genarated nightly using a _GitHub Actions_ workflow, so changes will be visible the day after they are made.
 
 When a repository is "archived" in GitHub settings it displays in italics on the "all workshops" list; archived workshops should not be `featured`. 
 {: .note}
@@ -46,10 +46,13 @@ Teams may prefer to control their section of a workshop list manually instead of
 
 - Several Citation Management team workshops are not in GitHub. To include these non-repository workshops they must edit their list manually.
 
-To change a manually edited list, edit the corresponding html file in the `ubc-library-rc.github.io` repository. 
+To change a manually edited list, edit the corresponding html file in the `ubc-library-rc.github.io` repository: 
 
-- all workshop list: <https://github.com/ubc-library-rc/ubc-library-rc.github.io/blob/master/non_repo_workshops.html>
-- featured workshop list: <https://github.com/ubc-library-rc/ubc-library-rc.github.io/blob/master/non_repo_featured_workshops.html>
+- all workshop list: edit [manual_all_list.html](https://github.com/ubc-library-rc/ubc-library-rc.github.io/blob/master/manual_all_list.html)
+- featured workshop list: edit [manual_featured_list.html](https://github.com/ubc-library-rc/ubc-library-rc.github.io/blob/master/manual_featured_list.html)
 
-For a group to switch between manual and automatic workshop lists, corresponding changes must be made to the the GitHub action script. 
+Never edit `index.html` and `all.html` files directly. These are regenerated nightly and your changes will be over-written. 
+{: .warn}
+
+Groups must choose _either_ automatic or manual workshop lists. To switch between these methods, corresponding changes must be made to `scripts/generate.js`. 
 {: .note}

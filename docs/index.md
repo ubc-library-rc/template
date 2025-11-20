@@ -5,7 +5,7 @@ nav_order: 1
 description:
 ---
 
-# UBC Library Research Commons: workshop template
+# Getting started 
 {: .no_toc }
 
 <details open markdown="block">
@@ -17,7 +17,7 @@ description:
 {:toc}
 </details>
 
-Start with the instructions below to setup a Research Commons workshop repository and website. For more customization and configuration options see [Just the Docs](https://pmarsceill.github.io/just-the-docs/) documentation.
+Start with the instructions below to setup a Research Commons workshop repository and website. For more customization and configuration options see [Just the Docs](https://just-the-docs.com) documentation.
 
 ## Set up the RC workshop site
 
@@ -112,7 +112,7 @@ nav_exclude: true
 ```
 
 ## Selected text formatting options
-Below are some formatting options that may be useful in RC worskhop sites. For more configuration options see [Just the Docs](https://pmarsceill.github.io/just-the-docs/) documentation.
+Below are some formatting options that may be useful in RC worskhop sites. For more configuration options see [Just the Docs](https://just-the-docs.com) documentation.
 
 ### Callouts
 
@@ -286,4 +286,4 @@ This is the dropdown content that you can hide if you want to.
 ~~~
 
 ### Table of contents
-See [In-page navigation with Table of Contents](https://pmarsceill.github.io/just-the-docs/docs/navigation-structure/#in-page-navigation-with-table-of-contents) for options to add a TOC within a page (like at the top of this page).
+See [In-Page Navigation](https://just-the-docs.com/docs/navigation/in-page/) for options to add a TOC within a page (like at the top of this page).

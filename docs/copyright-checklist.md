@@ -5,7 +5,7 @@ nav_order: 4
 description:
 ---
 
-# OER pre-publish checklist
+# Copyright checklist 
 
 [Workflow considerations when working with CC licensed works.](https://docs.google.com/presentation/d/1v8vi7HGRp9mxUWO4MAVn7vqV809yIoR-uLnhPjPl6ao/edit?usp=sharing)
 
