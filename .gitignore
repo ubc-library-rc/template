@@ -6,4 +6,8 @@ Gemfile*
 .jekyll-cache/
 **/.jekyll-cache
 tmp/
+**/test.md
 
+# Ignore the root _config.yml but still allow having one for the purposes
+# of running `jekyll serve` easily
+_config.yml
