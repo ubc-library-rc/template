@@ -2,11 +2,12 @@
 #Don't make it too long because it gets truncated
 #Quotes optional but sometimes required,
 #especially if there's a colon in the title.
-title: "Workshop title" 
+title: "RC Workshop Template" 
 
 #Various themes
 #remote_theme: ubc-library-rc/rc-theme
-remote_theme: ubc-library-rc/rc-theme@dev #specific branch
+#remote_theme: ubc-library-rc/rc-theme@dev #specific branch
+remote_theme: ubc-library-rc/rc-theme@ubc #specific branch
 #remote_theme: ubc-library-rc/rc-theme@5dbd930 #specific commit
 ##Or Read the Docs
 #remote_theme: carlosperate/jekyll-theme-rtd
@@ -18,6 +19,11 @@ favicon_ico: assets/images/favicon.svg
 #RC colour scheme
 color_scheme: rc
 
+callouts:
+  important:
+    title: Important
+    color: purple 
+
 #Edit this line to point to the correct location for your workshop
 github_repo_url: "https://github.com/ubc-library-rc/template/"
 
@@ -25,6 +31,10 @@ github_repo_url: "https://github.com/ubc-library-rc/template/"
 #ie, the site root directory
 #The reveal.js submodule must be here
 #source: content
+#Note: Github overrides the source directive. You have a choice
+#of either / or /docs, and you put this _config.yml in one or or
+#the other. However, the source option *does* work with a local
+#Jekyll install 
 
 # license information for workshop content
 license_name: "Creative Commons Attribution 4.0 International License"
