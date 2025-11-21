@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Publishing slides
-nav_order: 5
+nav_order: 10
 description:
 ---
 
@@ -18,175 +18,57 @@ description:
 </details>
 
 
-Workshop sites can include slides in [reveal.js](https://revealjs.com/) format. Slides can be presented <a href="../demo-slide-deck.html" target="_blank">in a separate tab</a> or embedded in a page, like this:
+Workshop sites can include slides in [reveal.js](https://revealjs.com/) format. Slides can be presented in the same tab, a separate tab, or even embedded into a page. You can even embed a slide presentation into a slide presentation if you want to, but that way lies madness. 
 
-<div style="overflow: hidden;
-  padding-top: 56.25%;
-  position: relative">
-<iframe src="slide_framework/presentation_framework_md.html" title="Demo embedded slide deck" scrolling="no" frameborder="0"
-    style="border: 0;
-   height: 100%;
-   left: 0;
-   position: absolute;
-   top: 0;
-   width: 100%;">
-  <p>Your browser does not support iframes.</p>
-</iframe>
-</div>
+There is already a template page with sample presentations, ready to edit. It's called `slide_presentation.md`, and links to:
 
-## Create a slide deck
+* The newer, better way of making presentations with Markdown, in light and dark themes
+* The older, more complicated way of making presentations in HTML, in light and dark themes
 
-Reveal.js is a presentation framework for creating slide decks with html. To create a new slide deck copy the code chunk below into a new file and save it to the workshop repository as an `.html` file. Notice the <section> elements near the middle; each <section> element corresponds to a slide. Update the `<title>` and `<section>` elements with your own content.
+Plus, it outlines how to have things in a new tab or embedded in a page.
 
-```html
-<!doctype html>
-<html lang="en">
+Presentations are encapsulated in their own directory, called `slide_framework`, but you can easy link to them from a Markdown page in the `docs/` directory. It's what the sample page does.
 
-<head>
-  <meta charset="utf-8">
+The structure of presentations:
 
-  <!-- Title of page (as it will appear in search results) -->
-  <title>A demo slide deck</title>
+|File/directory| Purpose|
+|--------------|--------|
+|docs/slide_presentation.md| A page that links to presentations - an example|
+|docs/slide_framework/| Directory holding reveal.js presentations|
+|docs/slide_framework/custom/|Directory holding custom CSS for presentations|
+|docs/slide_framework/images/|Directory to hold presentation images|
+|docs/slide_framework/presentation_markdown|Directory which holds the *Markdown* of the presentation|
+|docs/slide_framework/presentation_framework*[md]*.html/|Frameworks for Markdown presentations|
+|docs/slide_framework/presentation_framework*html.html/|Frameworks for HTML presentations|
+|docs/slide_framework/presentation_markdown/markdown_template.md|Sample file for you to copy/edit; the meat/main vegetable of the presentation|
 
-  <meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+## How to guide
+### Markdown version
+Despite *mostly* using Markdown, you will still need a tiny bit of HTML. 
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+* In the `slide_framework` directory, select which Markdown presentation you would like to use (ie, light or dark. These correspond to `presentation_framework_md.html` and `presentation_framework_dark_md.html`. It you want your html page to have an interesting name, you can rename it.
 
-	<link rel="stylesheet" href="https://ubc-library-rc.github.io/reveal-ubc/css/reset.css">
-	<link rel="stylesheet" href="https://ubc-library-rc.github.io/reveal-ubc/css/reveal.css">
-	<link rel="stylesheet" href="https://ubc-library-rc.github.io/reveal-ubc/css/ubc.css" id="theme">
+    * Edit the `<title>` section (line 14)
+    * Edit the relevant `<section>` blocks to point to your Markdown file (line 39). You probably only need one section but you can have as many as you want.
 
-	<!-- Theme used for syntax highlighting of code -->
-	<link rel="stylesheet" href="https://ubc-library-rc.github.io/reveal-ubc/lib/css/monokai.css">
+Now it's only Markdown and adding images.
 
-	<!-- Printing and PDF exports -->
-	<script>
-		var link = document.createElement( 'link' );
-		link.rel = 'stylesheet';
-		link.type = 'text/css';
-		link.href = window.location.search.match( /print-pdf/gi ) ? 'https://ubc-library-rc.github.io/reveal-ubc/css/print/pdf.css' : 'https://ubc-library-rc.github.io/reveal-ubc/css/print/paper.css';
-		document.getElementsByTagName( 'head' )[0].appendChild( link );
-	</script>
+* Images get put into `docs/slide_framework/images`
+* The Markdown for your presentation is held in `docs/slide_famework/presentation_markdown/`. The sample file has examples of how to do typical presentation things.
 
-	<!--[if lt IE 9]>
-	<script src="lib/js/html5shiv.js"></script>
-	<![endif]-->
-</head>
+### HTML version
 
-<body>
-
-  <div class="reveal">
-
-	<!-- Any section element inside of this container is displayed as a slide -->
-		<div class="slides">
-
-      <section>
-        <h2>A demo slide deck</h2>
-      </section>
-
-      <section data-background="#e6f7ff">
-        <h3>Third slide</h3>
-        <p>Just an example to illustrate how reveal.js works</p>
-      </section>
-
-      <section>
-        <h3>Fourth sample slide, a list</h3>
-      </section>		      
-
-      <section data-background="#002145">
-        <h3>UBC Library <br> Research Commons</h3>
-        <blockquote>A multidisciplinary hub supporting research endeavours, partnerships, and education.</blockquote>
-      </section>
-
-      <section data-background="#002145">
-         <p> More from the Research Commons at (UBC-V)</p>
-         <ul>
-           <li><a href="https://researchcommons.library.ubc.ca/">researchcommons.library.ubc.ca</a></li>
-           <li><a href="https://researchcommons.library.ubc.ca/events/">Upcoming events</a></li>
-           <li><a href="https://researchcommons.library.ubc.ca/oer/">Open Educational Resources (OERs)</a></li>
-         </ul>
-      </section>
-
-      <section data-background="#002145">
-          <p> And  from the Center for Scholarly Communication (UBC-O)</p>
-          <ul>
-            <li><a href="https://library.ok.ubc.ca/research/csc/">library.ok.ubc.ca/research/csc/</a></li>
-            <li><a href="https://library.ok.ubc.ca/research/csc/workshops/">Upcoming events</a></li>
-            </ul>
-      </section>
-
-
-
-		</div>
-
-	</div>
-
-	<script src="https://ubc-library-rc.github.io/reveal-ubc/js/reveal.js"></script>
-
-	<script>
-
-		// More info https://github.com/hakimel/reveal.js#configuration
-		Reveal.initialize({
-			controls: true,
-			progress: true,
-			center: true,
-			hash: true,
-
-			transition: 'none', // none/fade/slide/convex/concave/zoom
-
-		// More info https://github.com/hakimel/reveal.js#dependencies
-			dependencies: [
-				{ src: 'https://ubc-library-rc.github.io/reveal-ubc/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-				{ src: 'https://ubc-library-rc.github.io/reveal-ubc/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-				{ src: 'https://ubc-library-rc.github.io/reveal-ubc/plugin/highlight/highlight.js' },
-				{ src: 'https://ubc-library-rc.github.io/reveal-ubc/plugin/search/search.js', async: true },
-				{ src: 'https://ubc-library-rc.github.io/reveal-ubc/plugin/zoom-js/zoom.js', async: true },
-				{ src: 'https://ubc-library-rc.github.io/reveal-ubc/plugin/notes/notes.js', async: true }
-				]
-			});
-
-	</script>
-
-	</body>
-</html>
-```
-
-Reveal.js slide decks have many formatting and display options - [see here](https://github.com/hakimel/reveal.js) for more information.
-
-The html file containing your slide deck will not appear in the navigation menu of your workshop site. To make it visible you can either link to it from one of the website content pages, or embed it in a page.
-
-## Link to the slide deck
-
- Simply add a link to the slide deck html to one of the .md pages in the site. Recommended practice is to open the slide deck in a new tab using the `target="_blank"` attribute.
-
-```html
-<a href="demo-slide-deck.html" target="_blank">View slides in new tab</a>
-```
-The link to the slides is relative to the page where they're linked from.
-{: .caution}
-
-## Embed slides on a page
-
-An alternative is to embed the slides into one of the pages in your workshop site. Add this code to the .md page where you'd like the slides to appear and change the iframe `src` and `title` attributes to point to your html slides.
-
-```html
-<div style="overflow: hidden;
-  padding-top: 56.25%;
-  position: relative">
-  <iframe src="demo-slide-deck.html" title="demo embedded slide deck" scrolling="no" frameborder="0"
-    style="border: 0;
-   height: 100%;
-   left: 0;
-   position: absolute;
-   top: 0;
-   width: 100%;">
-   <p>Your browser does not support iframes.</p>
- </iframe>
-</div>
-```
-
-This code ensures the slides will resize to fit the available space. It's written for slides displayed in a 16:9 aspect ratio but you can change the aspect ratio by changing the `padding-top` percentage. For 16:9 the percentage equals 9/16, or 0.5625 (56.25%). For a 4:3 aspect ratio the percentage would be 3/4, or 0.75 (75%).
+* Edit either `presentation_framework_html.html`  or `presentation_framework_dark_html.html` to make a reveal.js presentation using only HTML and JavaScript. Enjoy! 
 
 ## Generate PDF of slides
-See https://revealjs.com/pdf-export/ for instructions on exporting reveal.js slides to PDF. (Some formatting may be lost in the export.)
+See <https://revealjs.com/pdf-export/> for instructions on exporting reveal.js slides to PDF. (Some formatting may be lost in the export.). Generally, though, you can just print the presentation page and it works reasonably well.
+
+## Where to get help
+
+The main help for reveal.js is, of course, [its website](https://revealjs.com/markdown/). Important sections include:
+
+* [Markdown](https://revealjs.com/markdown/)
+* [Markup](https://revealjs.com/markup/), or the HTML section
+* [Fragments](https://revealjs.com/fragments/), in case you need to do fancy bullet points
+
+

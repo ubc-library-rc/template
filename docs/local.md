@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Running locally (optional)
-nav_order: 10
+nav_order: 30
 ---
 # Run a local instance of the workshop website
 {: .no_toc }
@@ -37,13 +37,17 @@ $ gem install jekyll-include-cache
 ```
 
 ## 3. Generate the site
-Now you can run any workshop site locally by changing to the outermost directory of the repository and running the terminal command `jekyll serve`
+Now you can run any workshop site locally by changing to the `docs/` directory of the repository and running the terminal command `jekyll serve`
  
-The terminal output will include the local "Server address" (usually `http://127.0.0.1:4000`). Paste this address into any web-browser to view the site locally.  
+{: .note}
+You may wonder why you can't just put `_config.yml` in the root directory and use `source: docs`, then run from the root directory. Well, technically you *can*, but only for a local installation (ie, `jekyll serve`). Github Pages overrides some of the `_config.yml` options, and `source` is one of them. While there is nothing prohibiting you from putting a `_config.yml` into your root directory, if you *do*, **do not** push it to Github. Add it to the `.gitignore` file.
 
-As long as jekyll serve is running the site will update when you save changes to your local files (press _ctrl-c_ to stop serving).
+The terminal output will include the local "Server address" (usually `http://127.0.0.1:4000`). `localhost` is usually a synonym for `127.0.0.1`, so you can almost always use `http://localhost:4000`. Paste or type this address into any web-browser to view the site locally. Note that it's **http**, not **https**. 
+
+As long as `jekyll serve` is running the site will update when you save changes to your local files (press _ctrl-c_ to stop serving). That's changes to the Markdown files. If you change `_config.yml`, you will need to restart `jekyll serve`.
 
 Once you're satisfied with your local changes use git to push your commits to GitHub. The changes will appear on the public workshop site within a few minutes.
 
-Jekyll creates two directories in your local repository: _.jekyll-cache/_ and *_site/*. These are only required to serve the site locally. Do not `git add` these directories or push them to GitHub.
 {: .note}
+Jekyll creates two directories in your local repository: _.jekyll-cache/_ and *_site/*. These are only required to serve the site locally. Do not `git add` these directories or push them to GitHub. The default `.gitignore` file already has these, but you should endure that you do not add these files.
+

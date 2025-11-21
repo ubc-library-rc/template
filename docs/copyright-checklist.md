@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Copyright checklist
-nav_order: 4
+nav_order: 20
 description:
 ---
 

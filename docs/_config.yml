@@ -6,7 +6,8 @@ title: "RC Workshop Template"
 
 #Various themes
 #remote_theme: ubc-library-rc/rc-theme
-remote_theme: ubc-library-rc/rc-theme@dev #specific branch
+#remote_theme: ubc-library-rc/rc-theme@dev #specific branch
+remote_theme: ubc-library-rc/rc-theme@ubc #specific branch
 #remote_theme: ubc-library-rc/rc-theme@5dbd930 #specific commit
 ##Or Read the Docs
 #remote_theme: carlosperate/jekyll-theme-rtd
@@ -17,6 +18,11 @@ favicon_ico: assets/images/favicon.svg
 
 #RC colour scheme
 color_scheme: rc
+
+callouts:
+  important:
+    title: Important
+    color: purple 
 
 #Edit this line to point to the correct location for your workshop
 github_repo_url: "https://github.com/ubc-library-rc/template/"

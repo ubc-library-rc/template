@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Update workshop after template changes
-nav_order: 3
+nav_order: 25
 description:
 ---
 # Update workshop after template changes
