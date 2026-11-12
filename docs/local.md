@@ -37,7 +37,7 @@ $ gem install jekyll-include-cache
 ```
 
 ## 3. Generate the site
-Now you can run any workshop site locally by changing to the `docs/` directory of the repository and running the terminal command `jekyll serve`
+Now you can run any workshop site locally by changing to the directory of the repository that contains the `_config.yml` file and running the terminal command `jekyll serve`
  
 {: .note}
 You may wonder why you can't just put `_config.yml` in the root directory and use `source: docs`, then run from the root directory. Well, technically you *can*, but only for a local installation (ie, `jekyll serve`). Github Pages overrides some of the `_config.yml` options, and `source` is one of them. While there is nothing prohibiting you from putting a `_config.yml` into your root directory, if you *do*, **do not** push it to Github. Add it to the `.gitignore` file.
